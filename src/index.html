@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .Login--main {
+      display: grid;
+      grid-template-rows: repeat(auto, 1fr);
+    }
+    
+    .Login--options {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Login--form input {
+      border-radius: 2px;
+    }
+  </style>
+</head>
+
+<body>
+  <main className="Login--main">
+    <section className="Login--options">
+      <div className="SignIn">
+        SIGN IN
+      </div>
+      <div className="SignUp">
+        SIGN UP
+      </div>
+    </section>
+    <section className="Login--formContainer">
+      <form action="Login--form">
+        <input type="text" name="user" id="user" placeholder="User" />
+        <input type="password" name="password" id="password" placeholder="Password" />
+        <button type="submit">SIGN IN</button>
+      </form>
+    </section>
+    <section className="SignUp--formContainer">
+      <input type="text" name="user" id="user" placeholder="User" />
+      <input type="password" name="password" id="password" placeholder="Password" />
+      <button type="submit">SIGN UP</button>
+    </section>
+  </main>
+</body>
+
+</html>

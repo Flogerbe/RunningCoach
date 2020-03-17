@@ -1,0 +1,62 @@
+@import'./App.scss';
+
+.Login--header {
+  background-image: url('../static/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Login--main {
+  display: grid;
+  grid-template-rows:  30% 10% auto;
+  background-color: #0A0A0B;
+  height: 100vh;
+}
+
+.Login--options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 18px;
+  color: #69636D;
+  margin: 50px;
+}
+
+.SignIn {
+  color: white;
+}
+
+ .SignUp:hover {
+  color: white;
+
+}
+
+.Login--formContainer{
+  margin-top: 20px;
+}
+.Login--form {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+input, button {
+  border-radius: 2px;
+  padding: 12px;
+  border: 1px solid ;
+  text-align: center;
+  width: 60%;
+  margin: 10px;
+  font-family: $font2;
+  font-size: 14px;
+}
+
+button {
+  background-color: #D5FF37;
+  color: black;
+}
+
+.SignUp--formContainer {
+  display: none;
+}
